@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="input.css">
+</head>
+ 
+    <body class=" flex  h-screen  bg-cyan-900">
+  
+ 
+        <div class="my-auto  bg-white   mx-auto rounded-2xl p-4" id="container">
+           
+            <div class="flex justify-center items-center ">
+                <i class="fa-solid fa-location-dot text-3xl"></i>
+                <input class="p-4 focus:outline-none" type="text" id="search" placeholder="Ingrese lugar">
+               
+                <button id="btn" class="bg-slate-200 w-10 h-10 justify-center items-center flex rounded-3xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <ul id="city-results" class=" flex flex-col   "  ></ul>
+           
+            <div id="info" class="mt-6 z-10"  style="display: none;"  >
+                <div class="flex justify-center m-2 ">
+                    <span id="nameCity">a</span>
+                </div>
+                <div class="justify-center flex flex-col items-center mb-10">
+                    <span id="imgTime"></span>
+                    <h2 class="font-bold text-5xl mt-2 mb-6" id="temp">-2*c</h2>
+                    <span class="font-semibold mt-4" id="infoTime">Está lloviendo</span>
+                    <p id="aca"> </p>
+                </div>
+    
+                <div class="flex justify-center gap-4 mt-10">
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-wind text-2xl m-2"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold" id="windSpeed">29Km/h</span>
+                            <span class="text-xs">Wind Speed</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <i class="fa-solid fa-cloud-showers-heavy  text-2xl m-2"></i>
+                        <div class="flex flex-col">
+                            <span class="font-bold" id="precipitation">29Km/h</span>
+                            <span class="text-xs">Precipitation</span>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>  
+    
+    
+        </div>
+        <script src="https://kit.fontawesome.com/0099e19613.js" crossorigin="anonymous"> </script>
+        <script src="input.js"></script>
+        <script src="api.js"></script>
+        <script src="infoCountry.js"></script>
+    
+  
+</body>
+</html>

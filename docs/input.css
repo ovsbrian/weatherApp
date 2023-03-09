@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ 
+
+
+#city-results{
+  max-height: 200px;
+  overflow : auto;
+ 
+}
+#city-results::-webkit-scrollbar{
+ 
+  width: 7px;
+ }
+.lis {
+  color: black;
+  list-style: none;
+  cursor: pointer;
+  background-color: #e6e3e3;
+  width: 200px;
+  padding: 4px;
+ 
+ 
+}
+
+.lis:hover{
+  background-color: rgb(196, 196, 196);
+}
+
