@@ -44,11 +44,11 @@ const createLi = (infos) => {
             verInfoCountry(info.lon, info.lat, textVisible)
             setTimeout(mostrarInfo, 1000)
             resultCity.style.display = 'none'
+            
         })
         resultCity.appendChild(li);
     })
 };
-
 
 
 

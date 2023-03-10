@@ -2,30 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
- 
-
-
-#city-results{
+#city-results {
   max-height: 200px;
-  overflow : auto;
- 
+   
+  overflow: auto;
+  padding-left: 5px;
 }
-#city-results::-webkit-scrollbar{
- 
+#city-results::-webkit-scrollbar {
   width: 7px;
- }
+}
 .lis {
-  color: black;
+  color: rgb(200, 206, 211);
   list-style: none;
   cursor: pointer;
-  background-color: #e6e3e3;
-  width: 200px;
-  padding: 4px;
- 
- 
+  background-color: #383232;
+  width: 210px;
+  padding: 6px;
 }
 
-.lis:hover{
-  background-color: rgb(196, 196, 196);
+.lis:hover {
+  background-color: #383232c2;
 }
-

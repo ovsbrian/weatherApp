@@ -2,7 +2,7 @@ const container = document.getElementById('container')
 const btn = document.getElementById('btn')
 const info = document.getElementById('info')
 const search = document.getElementById('search')
-
+const buscador = document.getElementById('buscador')
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -12,18 +12,21 @@ btn.addEventListener('click', (e) => {
 
 const valdiarInput = () => {
     const ciudad = search.value.trim()
-    if (ciudad ){
-    
+    if (ciudad) {
+
         getLonLat(ciudad)
         search.value = ''
-       
+
     }
 }
 
 const mostrarInfo = () => {
     if (info.style.display === 'none') {
         info.style.display = 'block'
-    } 
+       
+
+    }
 }
 
 
+ 
